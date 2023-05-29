@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-weight: normal;
+}
+
+body {
+    min-height: 100vh;
+    /* transition: color 0.5s, background-color 0.5s; */
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+        Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --primary: #1b75ba;
+    --secondary: #666666;
+    --dark: #333333;
+    --success: #21ba6d;
+    --error: #c10015;
+    --info: #31ccec;
+    --warning: #f2c037;
+    --grey: #cccccc;
+    --light: #ffffff;
+
+    --toastify-color-light: var(--light);
+    --toastify-color-dark: var(--dark);
+    --toastify-color-info: var(--primary);
+    --toastify-color-success: var(--success);
+    --toastify-color-warning: var(--warning);
+    --toastify-color-error: var(--danger);
+    --toastify-color-transparent: rgba(255, 255, 255, 0.7);
+
+    --toastify-icon-color-info: var(--primary);
+    --toastify-icon-color-success: var(--success);
+    --toastify-icon-color-warning: var(--warning);
+    --toastify-icon-color-error: var(--error);
+
+    --toastify-toast-width: auto;
+    --toastify-toast-background: var(--light);
+    --toastify-toast-min-height: auto;
+    --toastify-toast-max-height: 800px;
+    --toastify-font-family: "noto-light" !important;
+    --toastify-z-index: 9999;
+
+    --toastify-text-color-light: var(--secondary);
+    --toastify-text-color-dark: var(--light);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 6px;
+    transition: all 0.8s;
+}
+
+::-webkit-scrollbar-track {
+    background: #DDDDDD;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+}
+
+.link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--secondary);
+    text-transform: uppercase;
+}
